@@ -54,7 +54,7 @@ window.addEventListener('scroll', scrollHeader)
 var newSwiper = new Swiper(".new-swiper", {
     spaceBetween: 16,
     centeredSlides: true,
-    slidesPerview: "auto",
+    slidesPerView: "auto",
     loop: 'true',
 })
 
