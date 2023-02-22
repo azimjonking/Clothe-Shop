@@ -1132,6 +1132,30 @@ input {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 2rem;
     }
+
+    /* Shop page */
+
+    .shop__container {
+        grid-template-columns: 1.6fr 3.4fr;
+    }
+
+    .shop__content {
+        padding: 2rem 0 1.5rem 0;
+        border-radius: .75rem;
+    }
+
+    .shop__img {
+        width: 120px;
+    }
+
+    .shop__img,
+    .shop__subtitle {
+        margin-bottom: var(--mb-0-5);
+    }
+
+    .shop__title {
+        font-size: var(--normal-font-size);
+    }
 }
 
 /* For medium devices */
@@ -1221,6 +1245,18 @@ input {
         justify-items: start;
     }
 
+    /* shop page start */
+
+    .shop__container {
+        grid-template-columns: 520px;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+
+    /* shop page end */
+
+
+
     .footer__copy {
         margin-top: 4.5rem;
     }
@@ -1243,6 +1279,32 @@ input {
     .cart {
         width: 100%;
     }
+
+    /* shop page start */
+
+    .shop__container {
+        grid-template-columns: .8fr;
+    }
+
+    .shop__items {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        padding: 1.25rem 1.4rem;
+    }
+
+    .pagination span {
+        height: 1.8rem;
+        width: 1.8rem;
+        line-height: 30px;
+    }
+
+    .pagination {
+        column-gap: .4rem;
+    }
+
+    /* shop page end */
 }
 
 /* For small devices */
@@ -1273,4 +1335,16 @@ input {
     .steps__card {
         padding: 1.5rem;
     }
+
+    /* shop page start */
+
+    .shop__container {
+        grid-template-columns: 1fr;
+    }
+
+    .pagination span {
+        font-size: var(--small-font-size);
+    }
+
+    /* shop page end */
 }
