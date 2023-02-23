@@ -1193,6 +1193,16 @@ input {
     .shop__title {
         font-size: var(--normal-font-size);
     }
+
+    /* blog page start */
+    .blog__post {
+        column-gap: 1.6rem;
+    }
+
+    .blog__title {
+        font-size: var(--normal-font-size);
+    }
+    /* blog page end */
 }
 
 /* For medium devices */
@@ -1276,23 +1286,29 @@ input {
         grid-template-columns: .7fr;
     }
 
-    .footer__container {
-        grid-template-columns: 1fr;
-        row-gap: 2rem;
-        justify-items: start;
-    }
-
     /* shop page start */
-
     .shop__container {
         grid-template-columns: 520px;
         justify-content: center;
         row-gap: 2rem;
     }
 
+    .pagination {
+        justify-content: center;
+    }
     /* shop page end */
 
+    /* blog page start */
+    .blog__post {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* blog page end */
 
+    .footer__container {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        justify-items: start;
+    }
 
     .footer__copy {
         margin-top: 4.5rem;
@@ -1342,6 +1358,14 @@ input {
     }
 
     /* shop page end */
+
+    /* blog page start */
+    .blog__post {
+        grid-template-columns: 1fr;
+        row-gap: .8rem;
+    }
+    /* blog page end */
+
 }
 
 /* For small devices */
@@ -1384,4 +1408,10 @@ input {
     }
 
     /* shop page end */
+
+    /* blog page start */
+    .blog__post {
+        padding: .8rem;
+    }
+    /* blog page end */
 }
